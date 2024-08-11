@@ -33,13 +33,10 @@
 | user   | references | null: false, foreign_key: true |
 | room   | references | null: false, foreign_key: true |
 
-## messages テーブル
+### Association
 
-| Column  | Type       | Options                        |
-| ------- | ---------- | ------------------------------ |
-| content | string     |                                |
-| user    | references | null: false, foreign_key: true |
-| room    | references | null: false, foreign_key: true |
+- belongs_to :room
+- belongs_to :user
 
 ## messages テーブル
 
@@ -48,3 +45,8 @@
 | content | string     |                                |
 | user    | references | null: false, foreign_key: true |
 | room    | references | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :room
+- belongs_to :user
