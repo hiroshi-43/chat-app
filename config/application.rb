@@ -12,6 +12,7 @@ module ChatApp
     config.load_defaults 7.0
     config.i18n.default_locale = :ja   #アプリケーションの表示メッセージやエラーメッセージなど、ロケール（言語と地域設定）が日本語で表示されるようになります。
     config.time_zone = 'Tokyo'  #データベースに保存される日時や表示される日時が日本の標準時（JST）に基づいて処理されます。
+    config.active_storage.variant_processor = :mini_magick
 
     # Configuration for the application, engines, and railties goes here.
     #
